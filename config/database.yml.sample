@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: your_username
+  password: your_password
+  host: localhost
+
+development:
+  <<: *default
+  database: covid19_development
+
+test:
+  <<: *default
+  database: covid19_test
