@@ -1,8 +1,10 @@
+# Frozen_string_literal: true
+
 class HomeController < ApplicationController
   before_action :set_global_summary_service
 
   def index
-    @summary = @summary_service.gerenal
+    @summary = @summary_service.general
   end
 
   def confirmed
